@@ -1,0 +1,45 @@
+userName:
+accessKey:
+
+projectName: Test Gradle Integration
+
+buildName: Single Demo TestNG
+
+buildIdentifier: '#${BUILD_NUMBER}'
+framework: junit
+
+platforms:
+  - os: OS X
+    osVersion: Sonoma
+    browser: Safari
+    browserVersion: latest
+  - os: OS X
+    osVersion: Ventura
+    browser: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 10
+    browser: Edge
+    browserVersion: latest
+  - os: Windows
+    osVersion: 11
+    browser: Chrome
+    browserVersion: latest
+  - os: OS X
+    osVersion: Monterey
+    browser: firefox
+    browserVersion: latest
+
+parallelsPerPlatform: 1
+
+source: testng:archetype-setup:v1.5
+
+browserstackLocal: false
+debug: true
+networkLogs: true
+consoleLogs: errors
+selfHeal: true
+#testContextOptions:
+#  skipSessionStatus: true
+
+#testObservability: true
